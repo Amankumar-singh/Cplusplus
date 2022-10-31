@@ -39,15 +39,13 @@ int main(){
         int  y;
         cin>>y;
         int d = x/y;
-        if (d==1){
-            cout<<x/2<<endl;
-        }
-        else if(d==0){
+        if (d<1){
             cout<<x<<endl;
         }
         else {
-            cout<<d+(x-d*y)<<endl;
+            cout<<x/y + (x-(x/y)*y)<<endl;
         }
+        
         
     }
     return 0;
